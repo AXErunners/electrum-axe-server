@@ -3,9 +3,9 @@
 # AXE src/chainparams.cpp
 params = {
     'axe_main': {
-        'pubkey_address': 76, #L120
+        'pubkey_address': 55, #L120
         'script_address': 16, #L122
-        'genesis_hash': '00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6' #L110
+        'genesis_hash': '00000c33631ca6f2f61368991ce2dc03306b5bb50bf7cede5cfbba6db38e52e6' #L110
     },
     'axe_test': {
         'pubkey_address': 140, #L220
