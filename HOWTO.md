@@ -145,7 +145,7 @@ find out the best way to do this.
 We will download the latest git snapshot for Electrum to configure and install it:
 
     $ cd ~
-    $ git clone https://github.com/axepay/electrum-axe-server.git
+    $ git clone https://github.com/axerunners/electrum-axe-server.git
     $ cd electrum-axe-server
     $ sudo apt-get install python-setuptools
     $ sudo ./configure
