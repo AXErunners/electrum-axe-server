@@ -12,7 +12,7 @@ fi
 source_dir=$(cd "$(dirname "${BASH_SOURCE[0]}" )"; pwd)
 
 
-electrum_config="/etc/electrum-dash.conf"
+electrum_config="/etc/electrum-axe.conf"
 function read_config()
 {
     text=$1
@@ -26,7 +26,7 @@ function write_config()
 # create config file
 if [ ! -f $electrum_config ]; then
     echo "Creating config file"
-    cp $source_dir"/electrum-dash.conf.sample" $electrum_config
+    cp $source_dir"/electrum-axe.conf.sample" $electrum_config
 fi
 
 
@@ -53,7 +53,7 @@ fi
 
 
 # read path from config
-default_path="/var/electrum-dash-server"
+default_path="/var/electrum-axe-server"
 path=$(read_config "path")
 if ! [ "$path" ]; then
     read -p "Path for database (default: $default_path) " -r
@@ -66,7 +66,7 @@ if ! [ "$path" ]; then
 fi
 
 # read path from config
-default_logfile="/var/log/electrum-dash.log"
+default_logfile="/var/log/electrum-axe.log"
 logfile=$(read_config "logfile")
 if ! [ "$logfile" ]; then
     read -p "Path of logfile (default: $default_logfile) " -r
@@ -108,16 +108,16 @@ fi
 chown $user:$user $logfile
 
 
-dashd_user=$(read_config "dashd_user")
-if ! [ "$dashd_user" ]; then
-    read -p "rpcuser (from your dash.conf file): " -r
-    write_config "dashd_user" $REPLY
+axed_user=$(read_config "axed_user")
+if ! [ "$axed_user" ]; then
+    read -p "rpcuser (from your axe.conf file): " -r
+    write_config "axed_user" $REPLY
 fi
 
-dashd_password=$(read_config "dashd_password")
-if ! [ "$dashd_password" ]; then
-    read -p "rpcpassword (from your dash.conf file): " -r
-    write_config "dashd_password" $REPLY
+axed_password=$(read_config "axed_password")
+if ! [ "$axed_password" ]; then
+    read -p "rpcpassword (from your axe.conf file): " -r
+    write_config "axed_password" $REPLY
 fi
 
 

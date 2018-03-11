@@ -1,8 +1,8 @@
-Electrum-dash-server for the Electrum Dash client
+Electrum-axe-server for the Electrum AXE client
 =========================================
 
   * Author: Thomas Voegtlin (ThomasV on the bitcointalk forum)
-  * Dash codebase port Authors: ELM4Ever, Propulsion
+  * AXE codebase port Authors: ELM4Ever, Propulsion
   * Language: Python
 
 Features
@@ -12,7 +12,7 @@ Features
     described by Alan Reiner (see the 'ultimate blockchain
     compression' thread in the Bitcointalk forum)
 
-  * The server requires dashd, leveldb, x11_hash and plyvel
+  * The server requires axed, leveldb, x11_hash and plyvel
 
   * The server code is open source. Anyone can run a server, removing
     single points of failure concerns.
@@ -28,7 +28,7 @@ Installation
   1. To install and run a server, see INSTALL. For greater
      detail on the installation process, see HOWTO.md.
 
-  2. To start and stop the server, use the 'electrum-dash-server' script
+  2. To start and stop the server, use the 'electrum-axe-server' script
 
 
 

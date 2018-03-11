@@ -40,7 +40,7 @@ def rev_hex(s):
     return s.decode('hex')[::-1].encode('hex')
 
 
-# Use Dash's X11 Hash Function
+# Use AXE's X11 Hash Function
 HashX11 = lambda x: x11_hash.getPoWHash(x)
 
 Hash = lambda x: hashlib.sha256(hashlib.sha256(x).digest()).digest()

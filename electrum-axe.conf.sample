@@ -12,7 +12,7 @@ stratum_tcp_port = 50001
 #report_stratum_tcp_ssl_port = 50002
 banner = Welcome to Electrum!
 banner_file = /etc/electrum.banner
-# IRC connection for finding peers, #electrum-dash on Freenode IRC.
+# IRC connection for finding peers, #electrum-axe on Freenode IRC.
 #irc = no
 #irc_nick = <yournickname>
 # IRC prefix for mainnet is "D_" and testnet is "d_"
@@ -29,15 +29,15 @@ path =
 # for each address, history will be pruned if it is longer than this limit
 pruning_limit = 100
 
-# cache sizes in bytes, the default is optimized for ~4 GB RAM setups to run dashd alongside
+# cache sizes in bytes, the default is optimized for ~4 GB RAM setups to run axed alongside
 # If you have lots of RAM increase up to 16 times for best performance
 #hist_cache = 67108864
 #utxo_cache = 134217728
 #addr_cache = 16777216
 
-[dashd]
-dashd_host = localhost
-dashd_port = 8332
-# user and password from dash.conf
-dashd_user =
-dashd_password =
+[axed]
+axed_host = localhost
+axed_port = 8332
+# user and password from axe.conf
+axed_user =
+axed_password =

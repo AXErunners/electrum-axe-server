@@ -336,8 +336,8 @@ class Storage(object):
             print_log("no undo info for ", height)
         return eval(s)
 
-    def write_undo_info(self, height, dashd_height, undo_info):
-        if height > dashd_height - self.reorg_limit or self.test_reorgs:
+    def write_undo_info(self, height, axed_height, undo_info):
+        if height > axed_height - self.reorg_limit or self.test_reorgs:
             self.db_undo.put("undo_info_%d" % (height % self.reorg_limit), repr(undo_info))
 
     @staticmethod
