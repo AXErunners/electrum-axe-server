@@ -1,8 +1,8 @@
-Electrum-axe-server for the Electrum AXE client
+Electrum-AXE-server for the Electrum-AXE client
 =========================================
 
-  * Author: Thomas Voegtlin (ThomasV on the bitcointalk forum)
-  * AXE codebase port Authors: ELM4Ever, Propulsion
+  * Author: Thomas Voegtlin
+  * AXE codebase port Author: charlesrocket
   * Language: Python
 
 Features
